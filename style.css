@@ -1,0 +1,303 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+header{/*----------------Header-------------------*/
+    background: #1d3044;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header ul li{
+    padding: 2rem;
+    text-decoration: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}/*----------------Header end-------------------*/
+
+footer{/*----------------footer-------------------*/
+    height: 60px;
+    background: #1d3044;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+}/*----------------footer end-------------------*/
+
+body{
+    background: rgb(214, 218, 219);
+}
+
+/*----------------flex styling-------------------*/
+#flex__main{
+    width: 50%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.sedans{
+    background:  hsl(31, 77%, 52%);
+    padding: 2.5rem;
+    width: 33.33%;
+    align-items: center;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+h1{
+    padding-bottom: 1.5rem;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+}
+p{
+    font-size: 1.1rem;
+    margin-bottom: 6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 14rem;
+}
+.sedans button{
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    width: 10.3rem;
+    border: 0.2rem solid #fff;
+    background: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.sedans button:hover{
+    cursor: pointer;
+    color: hsl(31, 77%, 52%);
+    background: hsla(0, 0%, 100%, 0.75);
+}
+
+.suv{
+    background: hsl(184, 100%, 22%);
+    padding: 2.5rem;
+    width: 33.33%;
+}
+.suv button{
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    width: 10.3rem;
+    border: 3px solid #fff;
+    background: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.suv button:hover{
+    cursor: pointer;
+    color: hsl(184, 100%, 22%);
+    background: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.luxury{
+    background: hsl(179, 100%, 13%);
+    padding: 2.5rem;
+    width: 33.33%;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.luxury button{
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    width: 10.3rem;
+    border: 3px solid #fff;
+    background: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.luxury button:hover{
+    cursor: pointer;
+    color: hsl(179, 100%, 13%);
+    background: hsla(0, 0%, 100%, 0.75);
+}
+
+img{
+    margin-bottom: 2rem;
+}/*----------------flex styling end-------------------*/
+
+
+@media screen and (max-width:1440px){/*----------------media query of flex__task-------------------*/
+    #flex__main{
+        width: 60%;
+    }
+    .sedans button{
+    padding: 0.8rem;
+    border-radius: 2.5rem;
+    width: 10.3rem;
+    }
+
+    .suv button{
+    padding: 0.8rem;
+    border-radius: 2.5rem;
+    width: 10.3rem;
+    }
+    .luxury button{
+    padding: 0.8rem;
+    border-radius: 2.5rem;
+    width: 10.3rem;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:900px){
+    #flex__main{
+        width: 60%;
+    }
+    .sedans button{
+    padding: 0.6rem;
+    border-radius: 2.5rem;
+    width: 9rem;
+    }
+
+    .suv button{
+    padding: 0.6rem;
+    border-radius: 2.5rem;
+    width: 9rem;
+    }
+    .luxury button{
+    padding: 0.6rem;
+    border-radius: 2.5rem;
+    width: 9rem;
+    }
+    .sedans,.suv,.luxury{
+        padding: 1rem;
+    }
+    p{
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width:899px){
+    #flex__main{
+    width: 50%;
+    margin: auto;
+    height: 350vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+
+    .flex-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    }
+    .sedans button{
+    padding: 0.5rem;
+    border-radius: 2.5rem;
+    width: 8rem;
+    }
+    .suv button{
+    padding: 0.5rem;
+    border-radius: 2.5rem;
+    width: 8rem;
+    align-items: center;
+    }
+    .luxury button{
+    padding: 0.5rem;
+    border-radius: 2.5rem;
+    width: 8rem;
+    }
+    .sedans,.suv,.luxury{
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .sedans{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0px;
+    }
+    .luxury{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0px;
+    }
+}/*----------------media query of flex_-task end-------------------*/
+
+
+/*--------------GRID__TASK STYLING-------------*/
+
+.grid__main{
+    height: 100vh;
+    padding: 5rem;
+}
+
+.grid-container{
+    height: 600px;
+    width: 50%;
+    display: grid;
+    grid-template-areas: 
+    'a a a b'
+    'c c d d'
+    'c c e e'
+    ;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+    margin: auto;
+}
+
+.grid-container > div{
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.Item-a{
+    background: red;
+    grid-area: a;
+   
+}
+
+.Item-b{
+    background: yellow;
+    grid-area: b;
+}
+
+.Item-c{
+    background: green;
+    grid-area: c;
+
+}
+
+
+
+.Item-d{
+    background: dodgerblue;
+    grid-area: d;
+}
+
+.Item-e{
+    background: dodgerblue;
+    grid-area: e;
+}/*----------------grif task styling end-------------------*/
