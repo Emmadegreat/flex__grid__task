@@ -36,8 +36,9 @@ footer{/*----------------footer-------------------*/
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Lexend Deca', sans-serif;
+    margin-top:1.5rem;
 }/*----------------footer end-------------------*/
 
 body{
